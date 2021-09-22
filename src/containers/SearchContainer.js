@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import ImageSearch from '../components/ImageSearch'
 import { Button } from 'reactstrap';
-import Results from '../components/Results'
+import Images from '../components/Images'
 
 
-class ResultsContainer extends Component {
+class SearchContainer extends Component {
     constructor() {
         super();
         this.state = {
@@ -22,7 +22,7 @@ class ResultsContainer extends Component {
             .then(allImages => {
                 this.setState({ images: allImages });
             })
-            .catch(err => {
+            .catch(err => { 
                 throw Error(err.message);
             });
         });
@@ -41,10 +41,10 @@ class ResultsContainer extends Component {
             <div>
                 <ImageSearch fetchImages={this.fetchImages} />
                 <Button variant="outline-success" onClick={this.fetchImages}>Search</Button>
-                <Results images={this.state.images} />
+                <Images images={this.state.images} />
             </div>
         )
     }
 }
 
-export default ResultsContainer
+export default SearchContainer
