@@ -4,7 +4,7 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      <h1>Nasa Image Search</h1>
+      <h1>10 Spacey Images</h1>
       <SearchContainer />
     </div>
   );

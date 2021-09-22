@@ -11,7 +11,7 @@ class SearchContainer extends Component {
         }
     }
 
-    fetchImages = (query = "moon", searchType = "concept_tags") => {
+    fetchImages = () => {
         fetch(`https://api.nasa.gov/planetary/apod?api_key=VodNvDXzlgg3cT0dgOn9JuFzkcQLdDhEhfbwinEI&count=10`)
         .then(response => {
             if(!response.ok) {
@@ -34,9 +34,9 @@ class SearchContainer extends Component {
     render(){
         return (
             <div>
-                <p></p>
-                <Button id="search-button" onClick={this.fetchImages}>Load new images</Button>
-                <p></p><p></p><p></p><p></p><p></p><p></p>
+                <div className="button-container">
+                    <Button onClick={this.fetchImages}>Load new images</Button>
+                </div>
                 <div className="search-container">
                     <div className="grid-container">
                         {this.state.images.map(

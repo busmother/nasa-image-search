@@ -1,5 +1,6 @@
 h1 {
-  text-align: center;
+  margin: 20px;
+  border: none;
   font-family: "Lucinda Console", "Courier New", monospace;
 }
 
@@ -10,16 +11,21 @@ h1 {
 }
 
 button {
-  position: absolute;
-  left: 50%;
+  z-index: 1;
+  justify-content: center;
   background-color: rgb(39, 209, 135);
   margin: 20px;
   border: none;
   border-radius: 5px;
   height: 3rem;
-  width: max-content;
   color: whitesmoke;
   font-size: 16px;
+}
+
+.button-container {
+  width: 1000px;
+  height: 100px;
+
 }
 
 .grid-container {
@@ -31,7 +37,7 @@ button {
 .image-card {
   border: 2px solid grey;
   box-shadow: 3px 4px rgb(39, 209, 135);
-  width: 350px;
+  width: 320px;
   height: 500px;
   overflow: scroll;
 }
@@ -40,6 +46,7 @@ button {
   object-fit: cover;
   margin: 10px;
   width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-top: 30px;
 }
