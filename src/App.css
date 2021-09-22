@@ -8,10 +8,6 @@ h1 {
   width: 80em;
 }
 
-.search-tools {
-  display: inline-block;
-}
-
 button {
   float: right;
   background-color: rgb(39, 209, 135);

@@ -1,4 +1,3 @@
-import NavBar from './components/NavBar'
 import SearchContainer from './containers/SearchContainer'
 import './App.css';
 

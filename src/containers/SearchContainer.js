@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import ImageSearch from '../components/ImageSearch'
 import { Button } from 'reactstrap';
-import Images from '../components/Images'
+import ImageCard from '../components/ImageCard'
 
 
 class SearchContainer extends Component {
@@ -35,10 +34,18 @@ class SearchContainer extends Component {
     render(){
         return (
             <div className="search-container">
-                <span className="search-tools">
-                    <Button variant="outline-success" onClick={this.fetchImages}>Search</Button>
-                </span>
-                <Images images={this.state.images} />
+                <Button onClick={this.fetchImages}>Search</Button>
+                <div className="grid-container">
+                {this.state.images.map(
+                    image => <ImageCard 
+                    key={image.url} 
+                    src={image.url} 
+                    title={image.title} 
+                    date={image.date} 
+                    copyright={image.copyright} 
+                    explanation={image.explanation}/>
+                )} 
+            </div>
             </div>
         )
     }
