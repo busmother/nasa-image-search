@@ -38,9 +38,11 @@ class SearchContainer extends Component {
 
     render(){
         return (
-            <div>
-                <ImageSearch fetchImages={this.fetchImages} />
-                <Button variant="outline-success" onClick={this.fetchImages}>Search</Button>
+            <div className="search-container">
+                <span className="search-tools">
+                    <ImageSearch fetchImages={this.fetchImages} />
+                    <Button variant="outline-success" onClick={this.fetchImages}>Search</Button>
+                </span>
                 <Images images={this.state.images} />
             </div>
         )

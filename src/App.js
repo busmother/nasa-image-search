@@ -5,7 +5,7 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      <NavBar color='black' title='Nasa Image Search'/>
+      <h1>Nasa Image Search</h1>
       <SearchContainer />
     </div>
   );

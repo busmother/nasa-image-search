@@ -1,34 +1,46 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.image-card {
-  border: 2px solid grey;
-  box-shadow: 3px 4px rgb(39, 209, 135);
-  
-}
-
-.image {
-  object-fit: cover;
-  width: 300px;
-  height: 300px;
-}
-
 h1 {
   text-align: center;
   font-family: "Lucinda Console", "Courier New", monospace;
 }
 
+.search-container {
+  margin: 20px;
+  width: 80em;
+}
+
+.search-tools {
+  display: inline-block;
+}
+
 button {
   float: right;
   background-color: rgb(39, 209, 135);
+  margin: 5px;
   border: none;
   border-radius: 5px;
   height: 3rem;
   width: max-content;
   color: whitesmoke;
   font-size: 16px;
-  justify-self: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.image-card {
+  border: 2px solid grey;
+  box-shadow: 3px 4px rgb(39, 209, 135);
+  width: 350px;
+  height: 500px
+}
+
+.image {
+  object-fit: cover;
+  margin: 10px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
