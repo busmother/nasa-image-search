@@ -32,10 +32,6 @@ class SearchContainer extends Component {
         this.fetchImages()
     }
 
-    // add a dropdown for search type
-    // components for dropdown / button / imageCard / etc
-    // dark mode?
-
     render(){
         return (
             <div className="search-container">
