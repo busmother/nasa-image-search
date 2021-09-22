@@ -28,9 +28,9 @@ class SearchContainer extends Component {
         });
     }
 
-    componentDidMount() {
-        this.fetchImages()
-    }
+    // componentDidMount() {
+    //     this.fetchImages()
+    // }
 
     render(){
         return (

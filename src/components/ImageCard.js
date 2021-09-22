@@ -7,6 +7,12 @@ class ImageCard extends React.Component {
             liked: false
         }
     }
+
+    toggleHeart = () => {
+        this.setState(state => ({
+            liked: !state.liked
+        }));
+    }
     
     render(){
         return (
@@ -15,7 +21,7 @@ class ImageCard extends React.Component {
                 <h3 className="title">{this.props.title}</h3>
                 <h4 className="date">{this.props.date}</h4>
                 <h4 className="copyright">{this.props.copyright}</h4>
-                <div className="like"></div>
+                <el className="like" onClick={this.toggleHeart}>{this.state.liked ? "💚" : "🖤"}</el>
                 <h5 className="explanation">{this.props.explanation}</h5>
             </ul>
         )
