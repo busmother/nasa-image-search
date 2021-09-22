@@ -10,14 +10,14 @@ class ImageCard extends React.Component {
     
     render(){
         return (
-            <div id={this.props.key} className="image-card" >
+            <ul id={this.props.key} className="image-card" >
                 <img className="image" key={this.props.key} src={this.props.src} alt="image" />
-                <div className="title">{this.props.title}`</div>
-                <div className="date">{this.props.date}</div>
-                <div className="copyright">{this.props.copyright}</div>
+                <h3 className="title">{this.props.title}</h3>
+                <h4 className="date">{this.props.date}</h4>
+                <h4 className="copyright">{this.props.copyright}</h4>
                 <div className="like"></div>
-                <div className="explanation">{this.props.explanation}</div>
-            </div>
+                <h5 className="explanation">{this.props.explanation}</h5>
+            </ul>
         )
     }
 }
